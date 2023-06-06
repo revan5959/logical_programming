@@ -8,8 +8,25 @@ public class ReverseString1 {
 
 		char[] charArr = str.toCharArray();
 
+		// Approach 1
 		for (int i = charArr.length - 1; i >= 0; i--)
-			System.out.print(" " + charArr[i]);
+			System.out.print(charArr[i]);
+
+		System.out.println();
+
+		// Approach 2
+		for (int i = charArr.length - 1; i >= 0; i--)
+			System.out.print(str.charAt(i));
+
+		System.out.println();
+
+		// Approach 3
+		StringBuffer strBuffer = new StringBuffer(str);
+		System.out.println(strBuffer.reverse());
+
+		// Approach 4
+		StringBuilder strBuilder = new StringBuilder(str);
+		System.out.println(strBuilder.reverse());
 
 	}
 
